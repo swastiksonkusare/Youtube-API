@@ -14,14 +14,32 @@ html {
 body {
   box-sizing: border-box;
   min-height: 100vh;
+  margin: 4rem;
 }
 
 .main {
-  max-width: 100rem;
+  max-width: 140rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   grid-gap: 3rem;
+}
+
+.row {
+  display: flex !important;
+}
+
+.video-container {
+  width: 100%;
+}
+
+.video-detail {
+  width: 55%;
+  margin-right: 2rem;
+}
+
+.video-list {
+  width: 40%;
 }
 
 .searchbar {
@@ -40,4 +58,32 @@ input {
 
 input:focus-visible {
   outline: none;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .main {
+    margin: 0 3rem;
+  }
+  .row {
+    flex-direction: column !important;
+  }
+
+  .video-detail {
+    width: 100%;
+    margin: 0 0 3rem 0;
+  }
+
+  .video-list {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  body {
+    margin: 2rem;
+  }
+
+  .main {
+    margin: 0;
+  }
 }
