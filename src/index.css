@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  min-height: 100vh;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.main {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 3rem;
+}
+
+.searchbar {
+  margin-block-start: 3rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 1rem 1.5rem;
+  margin-block-start: 1rem;
+}
+
+input:focus-visible {
+  outline: none;
+}
